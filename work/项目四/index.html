@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>app</title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1276956_ep1qk8e2eg.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<script src="./dist/build.js"></script>
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-1', {
+				spaceBetween: 30,
+				effect: 'fade',
+				loop: true,
+				autoplay: {
+					delay: 3000,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+			var swiper = new Swiper('.swiper-2', {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				autoplay: {
+					delay: 3000,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+			var swiper = new Swiper('.swiper-3', {
+				direction: 'vertical',
+				slidesPerView: 4,
+				autoplay: {
+					delay: 3000,
+				},
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		</script>
+	</body>
+</html>
